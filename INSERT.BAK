@@ -1,0 +1,31 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int a[20],i,num,pos,n;
+	clrscr();
+	printf("\n\t\t\tINPUT\n");
+	printf("Enter the limit");
+	scanf("%d",&n);
+	printf("Enter the array");
+	for(i=0;i<n;i++)
+	{
+		scanf("%d",&a[i]);
+	}
+	printf("Enter the number to be insert");
+	scanf("%d",&num);
+	printf("Enter the position");
+	scanf("%d",&pos);
+	for(i=(n-1);i>=pos;i--)
+	{
+		a[i+1]=a[i];
+	}
+	a[pos]=num;
+	n++;
+	printf("\n\t\t\tOUTPUT\n");
+	for(i=0;i<n;i++)
+	{
+		printf("%d",a[i]);
+	}
+	getch();
+}
