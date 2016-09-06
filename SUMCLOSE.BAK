@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main()
+{
+	int a[100],n,i,j,s1=0,s2=0,e1,e2;
+	printf("enter the no.");
+	scanf("%d",&n);
+	for(i=0;i<n;i++)
+	{
+	   scanf("%d",&a[i]);
+	}
+	 s1=a[0]+a[1];
+	 for(i=0;i<n-1;i++)
+	 {
+	 for(j=i+1;j<n;j++)
+	 {
+	   s2=abs(a[i] + a[j]);
+	   if (abs(s1)>abs(s2))
+	   s1=s2;
+	   e1=a[i];
+	   e2=a[j];
+	   }
+	   }
+	   printf("\n%d\n%d",a[e1],a[e2]);
+	   return(0);
+	 }
