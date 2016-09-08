@@ -14,7 +14,7 @@ int main()
 	{
 	for(k=j+1;k<n;k++)
 	{
-	   if (a[i]^2 + a[j]^2 = a[k]^2)
+	   if (a[i]^2 + a[j]^2 = =a[k]^2)
 		printf("\n%d\n%d\n%d",a[i],a[j],a[k]);
 		}
 		}
