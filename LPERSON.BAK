@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+struct person
+{
+char name[10];
+int salary;
+int age;
+};
+void main()
+{
+struct person p[100];
+int i,n;
+printf("enter the data");
+scanf("%d",&n);
+for(i=0;i<n;i++)
+{
+gets(p[i].name);
+scanf("%d%d",&p[i].age,&p[i].salary);
+}
+for(i=0;i<n;i++)
+{
+printf("\n%d\n%d",p[i].age,p[i].salary);
+puts(p[i].name);
+printf("\n");
+}
+getch();
+}
